@@ -1,0 +1,20 @@
+### react ###
+.DS_*
+.DS_Store
+node_modules
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+### Production ###
+# builds
+/build
+
+# Env
+.env
+.env.*
