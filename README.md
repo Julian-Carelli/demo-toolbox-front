@@ -45,6 +45,12 @@ Run the command for the development environment:
 npm run dev
 ```
 
+To run tests:
+
+```
+npm run test
+```
+
 ------------------------------------------------------
 
 ### Installation with Docker (DOCKER MUST BE INSTALLED GLOBALLY)
@@ -88,11 +94,3 @@ npm run dev
 ------------------------------------------------------
 
 When all environments are running, you should access http://localhost:3000 to see the complete application.
-
-------------------------------------------------------
-
-To run tests:
-
-```
-npm run test
-```
