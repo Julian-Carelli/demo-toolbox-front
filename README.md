@@ -1,46 +1,98 @@
-# Getting Started with Create React App and Redux
+# demo-toolbox-front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+APP project that works with the demo-toolbox-back API.
 
-## Available Scripts
+### Prerequisites 📋
 
-In the project directory, you can run:
+```
+node -v <=16
+docker (optional)
 
-### `npm start`
+Have these ports available:
+  - 3000 ==> demo-toolbox-front (APP)
+  - 3005 ==> demo-toolbox-back (API)
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation 🔧
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone project:
 
-### `npm test`
+```
+git clone git@github.com:Julian-Carelli/demo-toolbox-front.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Enter the folder:
 
-### `npm run build`
+```
+cd demo-toolbox-front
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install all project dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm i
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build the application:
 
-### `npm run eject`
+```
+npm run build (IMPORTANT)
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Run the command for the development environment:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+------------------------------------------------------
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation with Docker (DOCKER MUST BE INSTALLED GLOBALLY)
 
-## Learn More
+Clone project:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+git clone git@github.com:Julian-Carelli/demo-toolbox-front.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Enter the folder:
+
+```
+cd demo-toolbox-front
+```
+
+Create a container for the project:
+
+```
+npm run docker:create
+```
+
+Enter the project's container:
+
+```
+docker exec -it demo-toolbox-front-container sh
+```
+
+Install all project dependencies:
+
+```
+npm i
+```
+
+Run the command for the development environment:
+
+```
+npm run dev
+```
+
+------------------------------------------------------
+
+When all environments are running, you should access http://localhost:3000 to see the complete application.
+
+------------------------------------------------------
+
+To run tests:
+
+```
+npm run test
+```
