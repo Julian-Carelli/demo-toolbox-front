@@ -13,6 +13,14 @@ Have these ports available:
   - 3005 ==> demo-toolbox-back (API)
 ```
 
+Ensure you have a `.env` file in the root of the project to load the necessary environment variables. Example `.env` file:
+
+```env
+  REACT_APP_DEMO_TOOLBOX_BACK_API=http://localhost:3005/api
+```
+
+This `.env` file will be automatically loaded by Docker when using the `docker-compose.yml` configuration mentioned earlier.
+
 ### Installation 🔧
 
 Clone project:
@@ -42,7 +50,7 @@ npm run build (IMPORTANT)
 Run the command for the development environment:
 
 ```
-npm run dev
+npm run start
 ```
 
 To run tests:
@@ -88,7 +96,7 @@ npm i
 Run the command for the development environment:
 
 ```
-npm run dev
+npm run start
 ```
 
 ------------------------------------------------------

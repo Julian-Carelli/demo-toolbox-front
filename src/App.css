@@ -1,39 +1,89 @@
-.App {
+.app-container {
+  background-color: #f8f9fa;
+  height: 100vh;
+}
+
+.app-header {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+  background-color: #dc3545;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.data-table {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.table-header {
+  background-color: #f1f1f1;
+  text-align: left;
+}
+
+.table-body tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-header__column {
+  padding: 10px;
+}
+
+.table-cell {
+  padding: 10px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  gap: 10px;
+  padding: 20px;
+}
+
+.file-input,
+.search-input {
+  width: 200px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.file-input:focus,
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.fetch-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+}
+
+.fetch-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.no-data-message {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
 }

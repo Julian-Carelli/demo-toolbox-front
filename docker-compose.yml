@@ -11,3 +11,5 @@ services:
     ports:
       - "3000:3000"
     working_dir: /app
+    env_file:
+      - .env
