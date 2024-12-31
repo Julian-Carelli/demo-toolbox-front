@@ -1,5 +1,5 @@
 import { DataTable } from './components/dataTable/dataTable';
-import './app.css';
+import './App.css';
 
 const App = () => {
   return <DataTable />;
