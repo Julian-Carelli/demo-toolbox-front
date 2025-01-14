@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --testPathPattern='test/'",
     "eject": "react-scripts eject",
     "docker:create": "docker-compose up -d",
     "docker:rebuild": "docker-compose up --build --no-recreate -d"
